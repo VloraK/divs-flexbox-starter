@@ -112,8 +112,9 @@ body {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
-  align-items: baseline;
+  align-items:flex-start;
 
 
 }
@@ -125,23 +126,21 @@ h1 {
 }
 
 .div-1, .div-2, .div-3 {
-  /*give the divs a width of 30%, add display:flex, set justify-content and align-items to center*/
-  color: #fff;
-  line-height: 1.5em;
-  font-size: 1em;
-  padding-left:1em;
-  background-color:red;
   display: flex;
   justify-content: center;
   align-items: center;
-
+  color: #fff;
+  line-height: 1.5em;
+  font-size: 1.25em;
+  width: 30%;
+  height: auto;
 }
 
 .div-2 p{
   border-left: 1px solid darkgrey;
   border-right: 1px solid darkgrey;
-  padding-left: 1em;
-  padding-right: 1em;
+  padding-left: 2em;
+  padding-right: 2em;
 
 }
 
