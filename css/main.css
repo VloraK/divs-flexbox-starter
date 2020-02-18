@@ -11,7 +11,7 @@
    ========================================================================== */
 
 html {
-    color: #222;
+    color: #fff;
     font-size: 1em;
     line-height: 1.4;
 }
@@ -123,6 +123,8 @@ h1 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  color:#000;
 }
 
 .div-1, .div-2, .div-3 {
@@ -144,6 +146,10 @@ h1 {
 
 }
 
+.wrapper ~ p {
+  display: flex;
+  width: 100%;
+}
 a {
   text-decoration: none;
   color:#000;
