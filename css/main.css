@@ -99,6 +99,7 @@ textarea {
 html {
   background-color: red;
   height: 100%;
+   width:100%;
 }
 
 body {
@@ -112,9 +113,7 @@ body {
   /*add display:flex and set justify-content to space-between*/
   font-weight: 700;
   display: flex;
-  flex-flow: row wrap;
   justify-content: space-between;
-  align-items:center;
 }
 
 h1 {
@@ -131,8 +130,8 @@ h1 {
   color: #fff;
   line-height: 1.5em;
   font-size: 1.25em;
-  /*width: 30%;*/
-  height: auto;
+  width: 30%;
+  height: 300px;
 }
 
 .div-2 p{
