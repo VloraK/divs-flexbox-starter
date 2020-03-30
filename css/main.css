@@ -97,72 +97,43 @@ textarea {
 
 
 html {
-  background-color: red;
+  background-color: #222;
   height: 100%;
-   width:100%;
+  width: 100%;
 }
 
 body {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 700;
   padding: 2em;
-  font-size: 1.25em;
+  color: #fff;
   height: 100%;
 }
 
 .wrapper {
-  /*add display:flex and set justify-content to space-between*/
-  font-weight: 700;
   display: flex;
+  flex-flow: row wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
-h1 {
-  text-align: center;
-  width: 100%;
-  color:#000;
-  font-size: 1.5em;
-}
-
-.div-1, .div-2, .div-3 {
+.div-1,
+.div-2,
+.div-3 {
   display: flex;
   justify-content: center;
   align-items: center;
   color: #fff;
   line-height: 1.5em;
   font-size: 1.25em;
-  width: 30%;
-  height: 300px;
+  /* width: 30%; */
+  height: auto;
 }
 
-.div-2 p{
-  border-left: 1px solid darkgrey;
-  border-right: 1px solid darkgrey;
-  padding-left: 2em;
-  padding-right: 2em;
+.wrapper span {
+  font-family: "Lora", sans-serif;
+  font-size: 1.3em;
 }
-
-.wrapper ~ p {
-  display: flex;
-  width: 100%;
-}
-
-a {
-  text-decoration: none;
-  color:#000;
-  background:white;
-  padding: 0.3em;
-  border-radius: 0.5em;
-  font-size: 0.3em;
-}
-
-a:hover {
-  background: black;
-  color:white;
-}
-
-
-
-
 
 /* ==========================================================================
    Helper classes
@@ -240,13 +211,17 @@ a:hover {
 
 /************************************Desktop********************************/
 
-@media (min-width: 1200px) {
-  .div-1, .div-2, .div-3 {
-    width: 30%;
+@media all and (min-width: 1200px) {
+  .div-1,
+  .div-2,
+  .div-3 {
+    flex-basis: 30%;
   }
 
-  a {
-    font-size: 1em;
+  .div-1,
+  .div-2 {
+    border-right: 1px solid #555;
+    padding-right: 30px;
   }
 }
 
